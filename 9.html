@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>
+        First Experiment
+    </title>
+
+</head>
+<body>
+<h1>
+	Basic arithmetic operations using defered script
+</h1>
+<div id="add">
+    <input type="number" id="add1" name="first">
+    <br>
+    <input type="number" id="add2" name="second">
+    <br><br>
+    <input type="submit" value="Submit" id="submit1" onclick="add()"><br>
+    <div id="addRes"></div>
+</div>
+<br>
+<br>
+<div id="sub">
+    <input type="number" name="first" id="sub1">
+    <br>
+    <input type="number" name="second" id="sub2">
+    <br><br>
+    <input type="submit" value="Submit" onclick="sub()" id="submit2"><br>
+    <div id="subRes"></div>
+</div>
+<br>
+<br>
+<div id="mul">
+    <input type="number" name="first" id="mul1">
+    <br>
+    <input type="number" name="second" id="mul2">
+    <br><br>
+    <input type="submit" value="Submit" onclick="mul()" id="submit3"><br>
+    <div id="mulRes"></div>
+</div>
+<br>
+<br>
+<div id="div">
+    <input type="number" name="first" id="div1">
+    <br>
+    <input type="number" name="second" id="div2">
+    <br><br>
+    <input type="submit" onclick="div()" value="Submit" id="submit4"><br>
+    <div id="divRes"></div>
+</div>
+<br>
+<br>
+</body>
+<script>
+
+
+    function add()
+    {
+     var a = document.getElementById("add1").value;
+     var b = document.getElementById("add2").value;
+     var c = a+b;
+     var s = document.getElementById("addRes");
+     var res = "Answer: " + c;
+     s.innerHTML = res;
+    }
+    function sub()
+    {
+     var a = document.getElementById("sub1").value;
+     var b = document.getElementById("sub2").value;
+     var c = a-b;
+     var s = document.getElementById("subRes");
+     var res = "Answer: " + c;
+     s.innerHTML = res;
+    }
+   function mul()
+    {
+     var a = document.getElementById("mul1").value;
+     var b = document.getElementById("mul2").value;
+     var c = a*b;
+     var s = document.getElementById("mulRes");
+     var res = "Answer: " + c;
+     s.innerHTML = res;
+    }
+    function div()
+    {
+     var a = document.getElementById("div1").value;
+     var b = document.getElementById("div2").value;
+     var c = a/b;
+     var s = document.getElementById("divRes");
+     var res = "Answer: " + c;
+     s.innerHTML = res;
+    }
+
+
+
+
+</script>
+</html>

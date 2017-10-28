@@ -1,0 +1,39 @@
+<html><head>
+<title>JavaScript Form Validation using a sample registration form</title>
+</head>
+<body>
+<h1>JavaScript Form Validation using a sample registration form</h1>
+<h2>Registration Form</h2>
+<p>Use tab keys to move from one input field to the next.</p>
+<label for="username">Name:</label>
+<input type="text" name="username" id="name" size="50" /><br>
+<label for="email">Email:</label>
+<input type="text" name="email" id = "mail" size="50" /><br>
+<label >age:</label>
+<input type="number" name="email" id = "age" size="50" /><br>
+<br>
+<input type="submit" name="submit" value="Submit" onclick="check()" />
+</body>
+<script>
+    function check()
+    {
+    var name = document.getElementById("name").value;
+    var age = document.getElementById("age").value;
+    var mail = document.getElementById("mail").value;
+
+    if(age <1 || age >100)
+    alert("STOP RIGHT THERE MY AGE LESS FRIEND!!");
+    if(name.length <3 || name.length >50)
+    alert("Name toh sahi likho!!");
+    if(name.length <3 || name.length >50)
+    alert("Name toh sahi likho!!");
+    else if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+  {
+    alert("You're done boss!");
+  }
+  else
+    alert("You have entered an invalid email address!");
+
+    }
+</script>
+</html>
